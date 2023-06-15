@@ -1,0 +1,92 @@
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #6f7a7f;
+  }
+  
+  .input-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-container label {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #a1a1a1;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+    pointer-events: none;
+  }
+  
+  .input-container input[type="number"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 24px;
+    outline: none;
+    letter-spacing: 1px;
+    transition: background-color 0.2s ease-in-out;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .input-container input[type="number"]:focus {
+    background-color: #444;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  
+  button {
+    padding: 20px;
+    background-color: #646464;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  button:hover {
+    background-color: #646464;
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  #resultado {
+    padding: 15px;
+    background-color: #fff7f7;
+    margin-top: 20px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    animation: pulse 1s infinite alternate;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }
